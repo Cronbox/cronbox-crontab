@@ -1,3 +1,3 @@
-# Генератор расписания для cron
+# Р“РµРЅРµСЂР°С‚РѕСЂ СЂР°СЃРїРёСЃР°РЅРёСЏ РґР»СЏ cron
 
 [https://crontab.cronbox.ru](https://crontab.cronbox.ru)
