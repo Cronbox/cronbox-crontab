@@ -9,6 +9,8 @@
     <meta name="content-language" content="ru">
     <meta name="description" content="Генератор расписания для Cron">
 
+    <link rel="icon" href="favicon.ico">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
           crossorigin="anonymous">
@@ -20,7 +22,16 @@
 </head>
 <body>
     <div class="container pl-2 pr-2 pb-2 pt-3 p-lg-5">
-        <h1 class="ml-1 ml-lg-3">Генератор расписания Cron</h1>
+        <h1 class="ml-1 ml-lg-3">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-calendar3 text-primary mr-1"
+                 fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                <path fill-rule="evenodd" d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+            </svg>
+
+            <span class="align-middle">Генератор расписания Cron</span>
+        </h1>
+
         <div class="ml-1 ml-lg-3 mb-3 mb-lg-4">
             <span class="text-secondary">Простой и быстрый генератор расписания для cron от</span>
             <a href="https://cronbox.ru" target="_blank">Cronbox</a>
@@ -119,34 +130,37 @@
 
         <div id="footer" class="row justify-content-between mb-5">
             <div class="col-12 col-lg-4">
-                <a href="https://cronbox.ru" target="_blank" class="ml-2">Мониторинг серверных задач</a>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-clock ml-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm8-7A8 8 0 1 1 0 8a8 8 0 0 1 16 0z"/>
+                    <path fill-rule="evenodd" d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+
+                <a href="https://cronbox.ru" target="_blank">Мониторинг серверных задач</a>
             </div>
-            <div class="col-lg-4 d-none d-lg-block powered-by text-right">
+            <div class="col-12 col-lg-4 text-center">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-window"
+                     fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                          d="M14 2H2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1zM2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2z"/>
+                    <path fill-rule="evenodd" d="M15 6H1V5h14v1z"/>
+                    <path d="M3 3.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1.5 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                </svg>
+
+                <a href="https://dfov.ru" target="_blank" class="align-middle">Панель управления для OpenVPN</a>
+            </div>
+            <div class="col-12 col-lg-4 d-none d-lg-block powered-by text-right">
+                <img src="tinyops-logo.png" alt="Логотип Tinyops.ru">
                 <a href="https://tinyops.ru" target="_blank" class="mr-2">Другие проекты</a>
             </div>
         </div>
 
         <div class="text-center text-secondary text-tiny mt-5">
-            © 2020 CRONBOX.RU
+            © 2020 <a href="https://cronbox.ru" target="_blank" title="Перейти на сайт cronbox.ru"
+                      class="text-secondary">CRONBOX.RU</a>
         </div>
     </div>
 
     <script src="js/kotlin.js"></script>
-    <script src="js/app-7.js"></script>
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(65258587, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/65258587" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <script src="js/app.js"></script>
 </body>
 </html>
