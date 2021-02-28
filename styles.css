@@ -1,0 +1,138 @@
+body {
+  font-family: "Inter", sans-serif !important;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239d9d9d' fill-opacity='0.48' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.9rem !important;
+}
+
+h2 {
+  font-size: 1.4rem !important;
+}
+
+input {
+  font-size: 1.5rem;
+  width: 300px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid lightgray;
+  padding: 8px 10px;
+}
+
+a {
+  color: #0039d6 !important;
+}
+
+input:hover, input:focus {
+  border: 2px solid #0039d6;
+  outline: none;
+}
+
+table {
+  border-radius: 5px;
+}
+
+table, th, td {
+  border: 1px solid lightgray;
+  font-size: 0.9rem;
+}
+
+th {
+  text-align: center;
+}
+
+th, td {
+  padding: 7px;
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  height: 1px;
+  background-color: lightgray;
+  border: 1px;
+}
+
+.text-primary {
+  color: #0039d6 !important;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.annotation {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.mb-5 {
+  margin-bottom: 30px;
+}
+
+.powered-by {
+  color: #a8a8a8;
+}
+
+#footer {
+  font-size: 0.9rem;
+}
+
+.text-tiny {
+  font-size: 0.8rem;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+/**
+=================================================
+   DARK THEME
+=================================================
+ */
+.dark-theme {
+  background-color: #2e2e2f !important;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f7f9f9' fill-opacity='0.22' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E") !important;
+  color: #f8f9fa !important;
+}
+.dark-theme .text-primary {
+  color: #f8f9fa !important;
+}
+.dark-theme .text-dark {
+  color: #f8f9fa !important;
+}
+.dark-theme .bg-white {
+  background-color: #2f2f2f !important;
+}
+.dark-theme .bg-light {
+  background-color: #252525 !important;
+}
+.dark-theme a {
+  color: #96aeec !important;
+}
+.dark-theme input {
+  color: #f8f9fa;
+  border: 2px solid #525252;
+  background-color: #252525 !important;
+}
+.dark-theme input:hover, .dark-theme input:focus {
+  border: 2px solid #96aeec;
+  outline: none;
+}
+.dark-theme table, .dark-theme th, .dark-theme td {
+  border: 1px solid #525252 !important;
+}
+.dark-theme hr {
+  background-color: #525252 !important;
+}
+
+/*# sourceMappingURL=styles.css.map */
+
+/*# sourceMappingURL=styles.css.map */
