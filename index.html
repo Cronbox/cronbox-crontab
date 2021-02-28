@@ -223,22 +223,26 @@
         toggleToDarkTheme.addEventListener(clickEventName, function() {
             document.body.classList.add(darkThemeClass);
 
-            toggleToLightTheme.classList.add(divInlineBlockClass);
-            toggleToLightTheme.classList.remove(divNoneClass);
-
-            toggleToDarkTheme.classList.add(divNoneClass);
-            toggleToDarkTheme.classList.remove(divInlineBlockClass);
+            showElement(toggleToLightTheme);
+            hideElement(toggleToDarkTheme);
         })
 
         toggleToLightTheme.addEventListener(clickEventName, function() {
             document.body.classList.remove(darkThemeClass);
 
-            toggleToDarkTheme.classList.add(divInlineBlockClass);
-            toggleToDarkTheme.classList.remove(divNoneClass);
-
-            toggleToLightTheme.classList.add(divNoneClass);
-            toggleToLightTheme.classList.remove(divInlineBlockClass);
+            showElement(toggleToDarkTheme);
+            hideElement(toggleToLightTheme);
         })
+
+        function showElement(element) {
+            element.classList.add(divInlineBlockClass);
+            element.classList.remove(divNoneClass);
+        }
+
+        function hideElement(element) {
+            element.classList.add(divNoneClass);
+            element.classList.remove(divInlineBlockClass);
+        }
     </script>
 
     <script src="js/kotlin.js"></script>
