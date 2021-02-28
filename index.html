@@ -212,6 +212,10 @@
     </div>
 
     <script>
+        const themeCacheItemName = 'cronbox_theme';
+        const lightThemeName = 'light';
+        const darkThemeName = 'dark';
+
         const toggleToDarkTheme = document.getElementById('toggle-to-dark-theme');
         const toggleToLightTheme = document.getElementById('toggle-to-light-theme');
 
@@ -221,18 +225,30 @@
         const divNoneClass = 'd-none';
 
         toggleToDarkTheme.addEventListener(clickEventName, function() {
+            switchToDarkTheme()
+        })
+
+        toggleToLightTheme.addEventListener(clickEventName, function() {
+            switchToLightTheme()
+        })
+
+        function switchToDarkTheme() {
             document.body.classList.add(darkThemeClass);
 
             showElement(toggleToLightTheme);
             hideElement(toggleToDarkTheme);
-        })
 
-        toggleToLightTheme.addEventListener(clickEventName, function() {
+            rememberTheme(darkThemeName);
+        }
+
+        function switchToLightTheme() {
             document.body.classList.remove(darkThemeClass);
 
             showElement(toggleToDarkTheme);
             hideElement(toggleToLightTheme);
-        })
+
+            rememberTheme(lightThemeName);
+        }
 
         function showElement(element) {
             element.classList.add(divInlineBlockClass);
@@ -243,6 +259,27 @@
             element.classList.add(divNoneClass);
             element.classList.remove(divInlineBlockClass);
         }
+
+        function rememberTheme(themeName) {
+            localStorage.setItem(themeCacheItemName, themeName)
+        }
+
+        function loadTheme() {
+            let themeName = localStorage.getItem(themeCacheItemName)
+
+            if (themeName == null) {
+                switchToLightTheme()
+
+            } else {
+                if (themeName === darkThemeName) {
+                    switchToDarkTheme()
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function(event) {
+            loadTheme()
+        });
     </script>
 
     <script src="js/kotlin.js"></script>
